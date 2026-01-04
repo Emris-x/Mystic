@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mystic | Shoes & Clothing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-dark:#0b0b12;
+      --pink:#ff4fd8;
+      --purple:#7a4dff;
+      --blue:#4cc9ff;
+      --card:#151525;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
+    body{background:radial-gradient(circle at top, #1a1a2e, var(--bg-dark));color:white;}
+    header{
+      padding:25px 60px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:var(--pink);
+      letter-spacing:2px;
+    }
+    nav a{
+      margin-left:25px;
+      text-decoration:none;
+      color:var(--blue);
+      font-weight:500;
+    }
+    .hero{
+      padding:80px 60px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+    .hero h1{
+      font-size:56px;
+      line-height:1.1;
+      background:linear-gradient(90deg,var(--pink),var(--purple));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+    .hero p{
+      margin:20px 0;
+      color:#cfcfe8;
+      font-size:18px;
+    }
+    .btn{
+      display:inline-block;
+      padding:14px 30px;
+      background:linear-gradient(90deg,var(--pink),var(--purple));
+      color:white;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow:0 10px 30px rgba(255,79,216,0.3);
+    }
+    .products{
+      padding:60px;
+    }
+    .products h2{
+      text-align:center;
+      font-size:36px;
+      margin-bottom:40px;
+      color:var(--blue);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:30px;
+    }
+    .card{
+      background:linear-gradient(180deg,#1b1b33,var(--card));
+      border-radius:20px;
+      padding:20px;
+      transition:0.3s;
+      box-shadow:0 10px 40px rgba(0,0,0,0.4);
+    }
+    .card:hover{transform:translateY(-10px);}
+    .card img{
+      width:100%;
+      border-radius:15px;
+      margin-bottom:15px;
+    }
+    .card h3{color:var(--pink);}
+    .price{color:var(--blue);font-weight:600;margin:8px 0;}
+    footer{
+      padding:40px;
+      text-align:center;
+      color:#aaa;
+      border-top:1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MYSTIC</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>  <section class="hero">
+    <div>
+      <h1>Step Into<br>Mystic Style</h1>
+      <p>Premium shoes and clothing with a mythic, futuristic vibe. Dark luxury. Bold energy. Pure drip.</p>
+      <a class="btn" href="#products">Shop Now</a>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" style="width:100%;border-radius:30px;box-shadow:0 20px 60px rgba(0,0,0,0.5);" />
+    </div>
+  </section>  <section class="products" id="products">
+    <h2>Featured Drops</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606813909355-6f2b3c7e0c52" />
+        <h3>Mystic Runners</h3>
+        <div class="price">₦45,000</div>
+        <a class="btn" href="#">Buy</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" />
+        <h3>Shadow Hoodie</h3>
+        <div class="price">₦30,000</div>
+        <a class="btn" href="#">Buy</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de" />
+        <h3>Neon Street Tee</h3>
+        <div class="price">₦18,000</div>
+        <a class="btn" href="#">Buy</a>
+      </div>
+    </div>
+  </section>  <footer>
+    © 2026 Mystic Store. Designed for Emris.
+  </footer>
+</body>
+</html>
